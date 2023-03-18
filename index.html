@@ -8,6 +8,10 @@
   <title>Whiskey Drop | Taste a new whiskey every month</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
   <script src="https://kit.fontawesome.com/4fe3adf97b.js" crossorigin="anonymous">
   </script>
 </head>
@@ -46,7 +50,7 @@
       <a href="/login">Sign In / Sign Up</a>
     </div>
   </nav>
-  <article class="container mt-3">
+  <!-- <div class="alert-container">
     <div class="row d-none d-sm-block">
       <div class="col-12">
         <div class="alert alert-warning text-center">
@@ -55,16 +59,20 @@
         </div>
       </div>
     </div>
-    <!-- Callout -->
+  </div> -->
+  <!-- Callout -->
+  <div class="container-fluid callout-container">
+    <div class="opaque-overlay">&nbsp;</div>
     <div class="row">
       <div class="col-12">
         <section class="callout jumbotron text-center">
-          <h1>The finest whiskeys delivered to your doorstep.</h1>
+          <h1 class="jumbotron-header">The finest whiskeys delivered to your doorstep.</h1>
+          <hr class="block-divider block-divider--orange">
           <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
             <s class="d-none d-sm-inline">Eur 19.99</s>
             <span class="d-inline d-sm-none"><br></span>
             <strong><mark>First one is free!</mark></strong></p>
-          <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
+          <button class="btn btn--cta btn--red btn-lg" data-toggle="modal" data-target="#signUpModal">Sign Up!</button>
           <p class="text-muted"><small>You have to be over 18 to sign up to our service. Please drink
               responsibly!</small>
           </p>
@@ -72,9 +80,10 @@
       </div>
     </div>
     <!-- /.callout -->
-    <hr>
+  </div>
 
-    <!-- Quotes -->
+  <!-- Quotes -->
+  <div class="quotes-container">
     <section class="quotes">
       <div class="row">
         <div class="col-12 my-5">
@@ -110,22 +119,23 @@
         </div>
       </div>
     </section>
-    <!-- /.quotes -->
-    <hr>
+  </div>
+  <!-- /.quotes -->
 
-    <!-- Features -->
+  <!-- Features -->
+  <div class="feature-container">
     <section class="features">
       <div class="row">
         <div class="col-12 my-5">
           <h2 class="text-uppercase">Features:</h2>
         </div>
       </div>
-      </div>
       <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="feature">
             <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1 <span
-                class="badge badge-success">NEW!</span></h3>
+                class="badge badge-success">NEW!</span>
+            </h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua.
@@ -161,9 +171,11 @@
         </div>
       </div>
     </section>
-    <!-- /.features -->
+  </div>
+  <!-- /.features -->
 
-    <!-- Monthly favourites -->
+  <!-- Monthly favourites -->
+  <div class="table-container">
     <section class="monthly_favs">
       <h2 class="text-uppercase">Whiskey of the Month:</h2>
       <table class="table table-bordered table-responsive-md">
@@ -203,7 +215,7 @@
         </tbody>
       </table>
     </section>
-  </article>
+  </div>
 
   <div class="modal" tabindex="-1" id="signUpModal">
     <div class="modal-dialog">
