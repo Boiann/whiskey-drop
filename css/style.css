@@ -62,11 +62,6 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
-.table-container {
-
-}
-
 /* Block dividers */
 
 .block-divider {
@@ -93,10 +88,6 @@ body {
 .content-container {
     padding-top: 75px;
     padding-bottom: 75px;
-}
-
-.container-wrapper {
-
 }
 
 .container-wrapper--red {
@@ -209,4 +200,10 @@ body {
 
 .table-hover tbody tr:hover {
     color: #f05f40;
+}
+
+/* MailChimp */
+
+#mc_embed_signup form {
+    margin: 0;
 }
